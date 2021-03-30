@@ -1,5 +1,10 @@
 name: Build & Deploy Website
-on: push
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+    - 'scratch/**'
 jobs:
     hosting:
       name: Build & Deploy
